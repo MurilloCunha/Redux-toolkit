@@ -11,7 +11,7 @@ body {
     "header"
     "mainContent"
     ;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     box-sizing: border-box;
     margin:0;
@@ -26,6 +26,20 @@ body {
     width: 100%;
     grid-area: header;
     background-color: rgb(232, 242, 248);
+}
+
+menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    list-style: none;
+}
+
+menu a {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .mainContent {
