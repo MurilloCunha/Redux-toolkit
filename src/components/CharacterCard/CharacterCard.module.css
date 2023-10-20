@@ -1,0 +1,47 @@
+.wrapper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: grey;
+  background-blend-mode: multiply;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 15rem;
+  overflow:hidden;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  width: 20rem;
+}
+
+.name {
+  color: var(--yellow-green);
+  font-family: 'Creepster', cursive;
+  font-size: 2rem;
+  text-align: left;
+  white-space: normal;
+  text-shadow: 4px 3px 0px black;
+}
+
+.status {
+  font-family: 'Creepster', cursive;
+  text-shadow: 4px 3px 0px black;
+  font-size: 1.5rem;
+  align-self: flex-end;
+  width: fit-content;
+}
+
+.Alive {
+  color: var(--mantis);
+}
+
+.Dead {
+  color: red;
+}
+
+.unknown {
+  color: var(--butterscotch);
+}
