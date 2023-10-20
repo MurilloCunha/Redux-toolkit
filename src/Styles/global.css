@@ -1,0 +1,35 @@
+:root {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-synthesis: none;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  
+  --butterscotch: #DC9137ff;
+  --space-cadet: #15162Dff;
+  --mantis: #7ABA44ff;
+  --space-cadet-2: #1D2042ff;
+  --yellow-green: #B0CE34ff;
+  --jet: #3B343Aff;
+  --asparagus: #66A867ff;
+  --azure-web: #D4E6E2ff;
+  --space-cadet-3: #15163Eff;
+  --pear: #CED757ff;
+  --dark-spring-green: #357742ff;
+}
+
+b {
+  font-weight: 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+}
