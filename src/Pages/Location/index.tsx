@@ -1,7 +1,7 @@
-import { useLocationsQuery } from "../../Services/rickAndMortyAPI";
+import { rickAndMortyQueries } from "../../APIs/Rick&MortyApi/endpoints";
 
 export function LocationPage(): JSX.Element {
-  const {data, error, isLoading } = useLocationsQuery();
+  const {data, error, isLoading } = rickAndMortyQueries.getAllLocations();
 
   return isLoading 
     ? <h1>Carregando</h1> 

@@ -1,7 +1,7 @@
-import { useEpisodesQuery } from "../../Services/rickAndMortyAPI";
+import { rickAndMortyQueries } from "../../APIs/Rick&MortyApi/endpoints";
 
 export function EpisodePage(): JSX.Element {
-  const {data, error, isLoading } = useEpisodesQuery();
+  const {data, error, isLoading } = rickAndMortyQueries.getAllEpisodes();
   return isLoading 
     ? <h1>Carregando</h1> 
     : <>

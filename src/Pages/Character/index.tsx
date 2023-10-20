@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { CharacterOptions } from "../../Services/interfaces";
-import { useCharactersQuery } from "../../Services/rickAndMortyAPI";
+import { CharacterOptions } from "../../APIs/Rick&MortyApi/types";
 import { formDataToObject } from "../../Utils/formDataToObject";
-import CharacterCard from "../../Components/CharacterCard";
 import styles from './CharacterPage.module.css';
+import { rickAndMortyQueries } from "../../APIs/Rick&MortyApi/endpoints";
+import CharacterCard from "../../components/CharacterCard";
 
 export function CharactersPage(): JSX.Element {
   const [characterRequestOptions, setCharacterRequestOptions] = useState<CharacterOptions>({});
-  const {data, error, isLoading } = useCharactersQuery(characterRequestOptions);
+  const {data, error, isLoading } = rickAndMortyQueries.getAllCharacters(characterRequestOptions);
   
   function handleFilter(event: React.FormEvent<HTMLFormElement>){
     event.preventDefault();
