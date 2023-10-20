@@ -17,7 +17,22 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,ico,png,svg, webp}'],
         cleanupOutdatedCaches: true,
         sourcemap: true,
-
+        runtimeCaching: [
+          {
+            urlPattern: /^https:\/\/rickandmortyapi.com\/api\/.*/i,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'R&K-API',
+              expiration: {
+                maxEntries: 500,
+                maxAgeSeconds: 60 * 60 * 24 * 365 * 2,
+              },
+              cacheableResponse: {
+                statuses: [200]
+              }
+            }
+          }
+        ],
       },
       includeAssets: ['apple-touch-icon.png'],
       manifest: manifest,
